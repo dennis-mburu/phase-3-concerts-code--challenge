@@ -1,5 +1,5 @@
 class Concert
-    attr_reader :band, :venue
+    attr_reader :band, :venue, :date
     @@all = []
 
     def initialize (date, band, venue)

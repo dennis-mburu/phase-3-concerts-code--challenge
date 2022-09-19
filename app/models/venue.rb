@@ -25,4 +25,14 @@ class Venue
             concert.band
         end
     end
+
+    def concert_on(date)
+        self.concerts.find do |concert|
+            concert.date == date
+        end
+    end
+
+    def most_frequent_band
+        self.bands.uniq.max_by { |i| self.bands.count(i)}
+    end
 end
