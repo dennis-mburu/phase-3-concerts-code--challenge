@@ -17,4 +17,8 @@ class Concert
         self.band.hometown == self.venue.city ? true : false
     end
 
+    def introduction
+        "Hello #{self.venue.city}!!!!!, we are #{self.band.name} and we're from #{self.band.hometown}"
+    end
+
 end

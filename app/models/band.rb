@@ -19,4 +19,15 @@ class Band
             concert.band == self
         end
     end
+
+    def play_in_venue(venue, date)
+        Concert.new(date, self, venue)
+    end
+
+    def all_introductions
+        band_concerts_arr = self.concerts
+        band_concerts_arr.map do |concert|
+            concert.introduction
+        end
+    end
 end

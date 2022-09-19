@@ -16,6 +16,7 @@ superbowl = Concert.new("Jan 20 2023", daughtry, ms)
 tomorrowland = Concert.new("Dec 24 2022", linkin, hb)
 halftimeshow = Concert.new("Dec 31 2022", linkin, ms)
 jam = Concert.new("22 Nov 2022", owl_city, hb)
+# session = Concert.new(**{band: "jamsession", date: '12 Dec 2022', venue: "florida"})
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
