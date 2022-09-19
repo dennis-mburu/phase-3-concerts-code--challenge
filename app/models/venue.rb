@@ -12,4 +12,17 @@ class Venue
     def self.all
         @@all
     end
+
+    def concerts
+        all_concerts = Concert.all
+        all_concerts.filter do |concert|
+            concert.venue == self
+        end
+    end
+
+    def bands 
+        self.concerts.map do |concert|
+            concert.band
+        end
+    end
 end
