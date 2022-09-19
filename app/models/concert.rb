@@ -13,4 +13,8 @@ class Concert
         @@all
     end
 
+    def hometown_show?
+        self.band.hometown == self.venue.city ? true : false
+    end
+
 end

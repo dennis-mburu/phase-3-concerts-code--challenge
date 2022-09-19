@@ -12,4 +12,11 @@ class Band
     def self.all
         @@all
     end
+
+    def concerts
+        all_concerts = Concert.all
+        all_concerts.filter do |concert|
+            concert.band == self
+        end
+    end
 end
